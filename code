@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>7th s blog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Modak&family=Fredoka:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pink:#ff4fa3; --deep:#d6006f; --pale:#ffc2e3; --sky:#7fd8ff; --skydeep:#1fa8e8; --skypale:#cdefff; --ink:#1a0033;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{
+  margin:0; color:var(--ink); background:var(--sky);
+  background-image:radial-gradient(var(--pink) 3px, transparent 3px);
+  background-size:28px 28px;
+  font-family:"Fredoka","Baloo 2","Comic Sans MS","Trebuchet MS",sans-serif; font-weight:600;
+}
+header{text-align:center; padding:40px 16px 20px}
+h1{
+  display:inline-block; margin:0; font-family:"Modak","Chewy","Bubblegum Sans","Comic Sans MS",cursive; font-weight:400;
+  font-size:clamp(3rem,13vw,7.5rem); line-height:1.15;
+  color:var(--pink); background:#fff; padding:.15em .4em; border:6px solid var(--ink);
+  border-radius:40px; box-shadow:10px 10px 0 var(--ink); transform:rotate(-3deg);
+  -webkit-text-stroke:4px var(--ink); paint-order:stroke fill; letter-spacing:2px;
+  text-shadow:0 5px 0 var(--ink), 0 10px 0 var(--skydeep);
+}
+.sub{
+  display:inline-block; margin:28px 0 0; font-size:1.2rem; background:var(--ink); color:var(--sky);
+  padding:10px 22px; border-radius:999px; transform:rotate(2deg);
+}
+main{max-width:1100px; margin:0 auto; padding:24px 16px 60px}
+.grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:28px}
+.card{
+  border:5px solid var(--ink); border-radius:36px; padding:16px; box-shadow:8px 8px 0 var(--ink);
+  transition:transform .15s;
+}
+.card:hover{transform:rotate(-1.5deg) scale(1.03)}
+.card:nth-child(6n+1){background:var(--pink)} .card:nth-child(6n+2){background:var(--sky)}
+.card:nth-child(6n+3){background:var(--pale)} .card:nth-child(6n+4){background:var(--skypale)}
+.card:nth-child(6n+5){background:var(--sky)} .card:nth-child(6n+6){background:var(--pink)}
+.card .pic{
+  aspect-ratio:4/3; border:4px solid var(--ink); border-radius:24px; background:#fff; overflow:hidden;
+  display:flex; align-items:center; justify-content:center; font-size:4.5rem;
+}
+.card .pic img{width:100%; height:100%; object-fit:cover; display:block}
+.card h2{margin:14px 6px 6px; font-size:1.5rem}
+.card p{margin:0 6px 8px; font-weight:500; line-height:1.4}
+.send{
+  max-width:640px; margin:0 auto 40px; padding:20px 24px; text-align:center;
+  background:var(--pale); border:5px solid var(--ink); border-radius:36px; box-shadow:8px 8px 0 var(--ink);
+  transform:rotate(1.5deg);
+}
+.send h2{margin:0 0 8px; font-size:1.8rem; color:var(--deep)}
+.send p{margin:0; font-size:1.15rem; overflow-wrap:anywhere}
+.send strong{background:var(--ink); color:var(--sky); padding:2px 12px; border-radius:999px; display:inline-block; margin-top:6px}
+footer{text-align:center; padding:0 16px 40px; font-size:1.1rem}
+footer span{background:var(--ink); color:var(--sky); padding:8px 18px; border-radius:999px}
+@media (prefers-reduced-motion:reduce){.card{transition:none}}
+</style>
+</head>
+<body>
+<header>
+  <h1>7th s blog</h1><br>
+  <p class="sub">Holiday ideas to make your break EPIC!</p>
+</header>
+
+<main>
+  <div class="grid">
+
+    <div class="card">
+      <div class="pic">🏖️</div>
+      <h2>Beach day</h2>
+      <p>Build a giant sandcastle, play volleyball and eat ice cream by the waves.</p>
+    </div>
+
+    <div class="card">
+      <div class="pic">⛺</div>
+      <h2>Camping night</h2>
+      <p>Sleep under the stars, tell scary stories and roast marshmallows.</p>
+    </div>
+
+    <div class="card">
+      <div class="pic">🚲</div>
+      <h2>Bike adventure</h2>
+      <p>Pick a new route with friends and find the best snack stop on the way.</p>
+    </div>
+
+    <div class="card">
+      <div class="pic">🎬</div>
+      <h2>Movie marathon</h2>
+      <p>Pillows, popcorn and your favorite movies. Vote for the best one!</p>
+    </div>
+
+    <div class="card">
+      <div class="pic">🍕</div>
+      <h2>Cook something</h2>
+      <p>Make your own pizza with crazy toppings. Weird combos are allowed.</p>
+    </div>
+
+    <div class="card">
+      <div class="pic">🎨</div>
+      <h2>Art attack</h2>
+      <p>Paint, draw or build something with recycled stuff from home.</p>
+    </div>
+
+  </div>
+</main>
+
+<section class="send">
+  <h2>Want to be in the blog?</h2>
+  <p>To publish something, send your post to <strong>gabriel.balbi@colegiologosofico.edu.ar</strong></p>
+  <p style="margin-top:10px">Posts can take up to 48 hours to go up.</p>
+</section>
+
+<footer><span>Made by Gaby and Thiago 💖 · Have great holidays!</span></footer>
+
+<!--
+=====================================================================
+INACTIVE CARD TEMPLATE
+To use it: copy the card between START CARD and END CARD, paste it
+inside <div class="grid"> (next to the other cards), and delete every
+line that starts with "TXT". Every part is labeled with TXT.
+=====================================================================
+
+TXT START CARD
+<div class="card">
+TXT ^ the rounded box (cubicle). Its color changes automatically.
+
+  <div class="pic">
+TXT ^ image frame
+    <img src="PUT-YOUR-IMAGE-LINK-HERE.jpg" alt="Describe your image">
+TXT ^ IMAGE: change src to your image link and alt to a short description.
+TXT   Or delete the <img> line and write an emoji instead.
+  </div>
+
+  <h2>Your title here</h2>
+TXT ^ TITLE: write the name of your idea
+
+  <p>Your description here.</p>
+TXT ^ DESCRIPTION: write 1 or 2 sentences about your idea
+
+</div>
+TXT END CARD
+-->
+</body>
+</html>    
